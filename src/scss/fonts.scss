@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Akrobat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/Akrobat-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Akrobat-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Akrobat';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/Akrobat-Bold.woff2') format('woff2'),
+       url('/assets/fonts/Akrobat-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pribambas';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/Pribambas-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Pribambas-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/TildaSans-Regular.woff2') format('woff2'),
+       url('/assets/fonts/TildaSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tilda Sans';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/TildaSans-Bold.woff2') format('woff2'),
+       url('/assets/fonts/TildaSans-Bold.woff') format('woff');
+}

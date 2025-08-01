@@ -1,0 +1,126 @@
+.competencies {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fbf5d5;
+  margin-top: 200px;
+  &__container {
+    display: flex;
+    max-width: 1456px;
+    width: 100%;
+
+    @media (max-width: 1279px) {
+      position: relative;
+      margin-left: 40px;
+    }
+
+    @media (max-width: 1000px) {
+      margin: 0 24px;
+    }
+    @media (max-width: 500px) {
+      margin: 0 16px;
+    }
+
+    // picture {
+    //   @media (max-width: 1279px) {
+    //     order: 2;
+    //   }
+    // }
+  }
+
+  &__image {
+    transform: translate(-72px, -56px);
+    @media (max-width: 1536px) {
+      transform: translate(-24px, -51px);
+    }
+    @media (max-width: 1279px) {
+      position: absolute;
+      right: 0;
+      transform: translate(0, -64px);
+      width: clamp(12.375rem, 28.963vw - 1.527rem, 21.625rem);
+    }
+    @media (max-width: 1000px) {
+      transform: translate(0, -35px);
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-family: "Akrobat";
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 100%;
+    color: #3a5377;
+    margin-top: 93px;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+    @media (max-width: 1536px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 1279px) {
+      font-size: 51px;
+    }
+    @media (max-width: 500px) {
+      font-size: 40px;
+      letter-spacing: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-column-gap: 51px;
+    row-gap: 64px;
+    @media (max-width: 1536px) {
+      row-gap: 54px;
+      column-gap: 34px;
+    }
+    @media (max-width: 1279px) {
+      column-gap: 24px;
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      row-gap: 26px;
+    }
+  }
+
+  .item {
+    @media (max-width: 1279px) {
+      max-width: 346px;
+    }
+    @media (max-width: 500px) {
+      max-width: none;
+    }
+    &__title {
+      font-family: "Tilda Sans";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 112%;
+      color: #3a5377;
+      width: 50%;
+      margin-bottom: -3px;
+    }
+
+    &__subtitle {
+      font-family: "Tilda Sans";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 112%;
+      letter-spacing: 0%;
+      color: #3a5377;
+      width: 85%;
+      @media (max-width: 1536px) {
+        width: 100%;
+      }
+    }
+  }
+}
