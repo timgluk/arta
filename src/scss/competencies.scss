@@ -20,18 +20,12 @@
     @media (max-width: 500px) {
       margin: 0 16px;
     }
-
-    // picture {
-    //   @media (max-width: 1279px) {
-    //     order: 2;
-    //   }
-    // }
   }
 
   &__image {
     transform: translate(-72px, -56px);
     @media (max-width: 1536px) {
-      transform: translate(-24px, -51px);
+      transform: translate(-41px, -51px);
     }
     @media (max-width: 1279px) {
       position: absolute;
@@ -46,9 +40,6 @@
     @media (max-width: 600px) {
       display: none;
     }
-  }
-
-  &__content {
   }
 
   &__title {
@@ -75,8 +66,8 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // grid-column-gap: 51px;
     row-gap: 64px;
+    margin-bottom: 80px;
     @media (max-width: 1536px) {
       row-gap: 54px;
       column-gap: 34px;
