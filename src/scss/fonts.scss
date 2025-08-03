@@ -3,16 +3,16 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/akrobat-regula.woff2') format('woff2'),
-       url('/assets/fonts/akrobat-regula.woff') format('woff');
+  src: url('./fonts/akrobat-regula.woff2') format('woff2'),
+       url('./fonts/akrobat-regula.woff') format('woff');
 }
 @font-face {
   font-family: 'Akrobat';
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/akrobat-bol.woff2') format('woff2'),
-       url('/assets/fonts/akrobat-bol.woff') format('woff');
+  src: url('./fonts/akrobat-bol.woff2') format('woff2'),
+       url('./fonts/akrobat-bol.woff') format('woff');
 }
 
 @font-face {
@@ -20,8 +20,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/pribambas-regula.woff2') format('woff2'),
-       url('/assets/fonts/pribambas-regula.woff') format('woff');
+  src: url('./fonts/pribambas-regula.woff2') format('woff2'),
+       url('./fonts/pribambas-regula.woff') format('woff');
 }
 
 @font-face {
@@ -29,8 +29,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/tildasans-regula.woff2') format('woff2'),
-       url('/assets/fonts/tildasans-regula.woff') format('woff');
+  src: url('./fonts/tildasans-regula.woff2') format('woff2'),
+       url('./fonts/tildasans-regula.woff') format('woff');
 }
 
 @font-face {
@@ -38,6 +38,6 @@
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/tildasans-bol.woff2') format('woff2'),
-       url('/assets/fonts/tildasans-bol.woff') format('woff');
+  src: url('./fonts/tildasans-bol.woff2') format('woff2'),
+       url('./fonts/tildasans-bol.woff') format('woff');
 }
