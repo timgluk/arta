@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5; // скорость
+    const walk = (x - startX) * 1; // скорость
     slider.scrollLeft = scrollLeft - walk;
   });
 });

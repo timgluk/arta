@@ -9,10 +9,39 @@
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-family: Tilda Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    color: #74aaf7;
+
     padding-left: 40px;
+    @media (max-width: 1000px) {
+      padding-left: clamp(1rem, 2.182vw + 0.386rem, 1.75rem);
+    }
   }
+
   &__title {
-     padding-left: 40px;
+    font-family: Akrobat;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 100%;
+    color: #3a5377;
+    padding-left: 40px;
+    margin: 12px 0 30px 0;
+    @media (max-width: 1000px) {
+      font-size: 51px;
+      padding-left: clamp(1rem, 2.182vw + 0.386rem, 1.75rem);
+    }
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
   }
 
   .slider {
@@ -24,26 +53,36 @@
     user-select: none;
     scroll-behavior: smooth;
     padding: 13px 40px;
+    margin-right: calc((100vw - 1536px) / -2);
+    @media (max-width: 1536px) {
+      margin-right: 0;
+    }
+    @media (max-width: 1000px) {
+      padding-left: clamp(1rem, 2.182vw + 0.386rem, 1.75rem);
+    }
     &.is-dragging {
       cursor: grabbing;
     }
 
-    scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }
 
     .item {
+      flex: 0 0 380px;
       display: grid;
       grid-template-rows: 80px 1fr 56px;
       box-sizing: border-box;
       height: 450px;
-      min-width: 380px;
-      width: 100%;
+      width: 380px;
       padding: 32px;
       border-radius: 16px;
       box-shadow: 0px 0px 16px 0px #41414126;
-
+      @media (max-width: 450px) {
+        flex: 0 0 300px;
+        width: 300px;
+        padding: 32px 24px;
+      }
       &__title {
         font-family: Akrobat;
         font-weight: 700;
@@ -66,7 +105,7 @@
       &__links {
         display: flex;
         gap: 16px;
-        // margin-top: 73px;
+        justify-content: space-between;
       }
       &__link {
         display: flex;
@@ -76,13 +115,35 @@
         font-family: Akrobat;
         font-weight: 700;
         font-size: 18px;
-        // line-height: 100%;
-        // letter-spacing: 1%;
         padding: 18px 32px;
         text-transform: uppercase;
         color: #ffffff;
         background: #74aaf7;
         text-decoration: none;
+        @media (max-width: 450px) {
+          visibility: hidden;
+          position: relative;
+          &::before {
+            content: attr(data-word);
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 120px;
+            font-family: Akrobat;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 18px 47px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #74aaf7;
+            text-decoration: none;
+          }
+        }
       }
     }
   }
