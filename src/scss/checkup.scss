@@ -105,4 +105,69 @@
       bottom: -85%;
     }
   }
+
+  .checkup__trigger {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    pointer-events: none;
+  }
+}
+
+/* cloud-1: слева → центр */
+.checkup.in-view .cloud-1 {
+  animation: slide-in-left 1.7s ease forwards;
+}
+
+/* cloud-2: справа → центр */
+.checkup.in-view .cloud-2 {
+  animation: slide-in-right 1.7s ease forwards;
+}
+
+.checkup.in-view .cloud-1 .cloud-outline {
+  transform-box: fill-box; /* чтобы вращалось по центру фигуры */
+  transform-origin: center;
+  animation: spin 2.5s linear forwards;
+}
+
+.checkup.in-view .cloud-1 .cloud-outline-2 {
+  transform-box: fill-box; /* чтобы вращалось по центру фигуры */
+  transform-origin: center;
+  animation: spin-2 2.5s linear forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg); /* вращение */
+  }
+}
+
+@keyframes spin-2 {
+  to {
+    transform: rotate(-360deg); /* вращение */
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-150%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(150%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
 }
