@@ -120,12 +120,12 @@
 
 /* cloud-1: слева → центр */
 .checkup.in-view .cloud-1 {
-  animation: slide-in-left 2.5s ease forwards;
+  animation: slide-in-left 3.5s ease forwards;
 }
 
 /* cloud-2: справа → центр */
 .checkup.in-view .cloud-2 {
-  animation: slide-in-right 2.5s ease forwards;
+  animation: slide-in-right 3.5s ease forwards;
 }
 
 .checkup.in-view .cloud-1 .cloud-outline {
@@ -134,10 +134,10 @@
   animation: spin 4s linear forwards;
 }
 
-.checkup.in-view .cloud-1 .cloud-outline-2 {
+.checkup.in-view .cloud-2 .cloud-outline-2 {
   transform-box: fill-box; /* чтобы вращалось по центру фигуры */
   transform-origin: center;
-  animation: spin-2 2.5s linear forwards;
+  animation: spin-2 4s linear forwards;
 }
 
 @keyframes spin {
@@ -169,7 +169,7 @@
     opacity: 0;
   }
   to {
-    transform: translateX(0) rotate(360deg);
+    transform: translateX(0) rotate(-360deg);
     opacity: 1;
   }
 }
