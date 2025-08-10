@@ -80,7 +80,7 @@
       padding: 32px;
       border-radius: 16px;
       box-shadow: 0px 0px 16px 0px #41414126;
-      
+
       @media (max-width: 450px) {
         flex: 0 0 300px;
         width: 300px;
@@ -181,26 +181,49 @@
           padding: 0 24px;
         }
       }
-
-      &:has(.item__icon:hover) .item__img {
-        transition: all 0.3s ease-in-out;
-        opacity: 1;
-        visibility: visible;
-      }
-      &:has(.item__icon:hover) .item__subtitle {
-        opacity: 1;
-        visibility: visible;
-      }
-      &:has(.item__icon:hover) .item__icon {
-        svg {
-          fill: #ffffff;
+      @media (hover: hover) {
+        &:has(.item__icon:hover) .item__img {
+          transition: all 0.3s ease-in-out;
+          opacity: 1;
+          visibility: visible;
+        }
+        &:has(.item__icon:hover) .item__subtitle {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:has(.item__icon:hover) .item__icon {
+          svg {
+            fill: #ffffff;
+          }
+        }
+        &:has(.item__icon:hover) .item__title,
+        &:has(.item__icon:hover) .item__description,
+        &:has(.item__icon:hover) .item__link {
+          visibility: hidden;
+          opacity: 0;
         }
       }
-      &:has(.item__icon:hover) .item__title,
-      &:has(.item__icon:hover) .item__description,
-      &:has(.item__icon:hover) .item__link {
-        visibility: hidden;
-        opacity: 0;
+      &.touch {
+        .item__img {
+          transition: all 0.3s ease-in-out;
+          opacity: 1;
+          visibility: visible;
+        }
+        .item__subtitle {
+          opacity: 1;
+          visibility: visible;
+        }
+        .item__icon {
+          svg {
+            fill: #ffffff;
+          }
+        }
+        .item__title,
+        .item__description,
+        .item__link {
+          visibility: hidden;
+          opacity: 0;
+        }
       }
     }
   }

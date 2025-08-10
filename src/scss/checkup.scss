@@ -49,6 +49,7 @@
   }
 
   &__desc {
+    padding: 0 15%;
     font-family: Tilda Sans;
     font-weight: 400;
     font-size: 20px;
@@ -92,6 +93,7 @@
     right: -70px;
     bottom: -120px;
     width: clamp(9.375rem, 40.761vw + 0.204rem, 32.813rem);
+    z-index: -1;
     @media (max-width: 1700px) {
       right: -70px;
       bottom: -237px;
@@ -118,18 +120,18 @@
 
 /* cloud-1: слева → центр */
 .checkup.in-view .cloud-1 {
-  animation: slide-in-left 1.7s ease forwards;
+  animation: slide-in-left 2.5s ease forwards;
 }
 
 /* cloud-2: справа → центр */
 .checkup.in-view .cloud-2 {
-  animation: slide-in-right 1.7s ease forwards;
+  animation: slide-in-right 2.5s ease forwards;
 }
 
 .checkup.in-view .cloud-1 .cloud-outline {
   transform-box: fill-box; /* чтобы вращалось по центру фигуры */
   transform-origin: center;
-  animation: spin 2.5s linear forwards;
+  animation: spin 4s linear forwards;
 }
 
 .checkup.in-view .cloud-1 .cloud-outline-2 {
